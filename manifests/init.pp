@@ -1,11 +1,11 @@
-class firefox::install {
+class iceweasel::install {
   package {
-    'firefox':
+    'iceweasel':
       ensure => installed,
       require => Class['xvfb'];
   }
 }
 
-class firefox {
-  include firefox::install
+class iceweasel {
+  include iceweasel::install
 }
