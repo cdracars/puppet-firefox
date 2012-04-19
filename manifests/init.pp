@@ -1,4 +1,4 @@
-class iceweasel::install {
+class firefox::install {
     case $::operatingsystem {
         'centos': {
             package {
@@ -18,6 +18,6 @@ class iceweasel::install {
     }
 }
 
-class iceweasel {
-  include iceweasel::install
+class firefox {
+  include firefox::install
 }
